@@ -2,6 +2,10 @@
 
 ---
 ## A simple parallel implementation of the sample sort algorithm in Julia.
+
+This solution uses functions like append!() and push!() and other Julia commodities to make the code simpler and easier to understand at the cost of not being very memory efficient.\
+Still, decent speedup values were observed with large arrays and are included below.
+
 ---
 
 ## The Algorithm As Implemented:
