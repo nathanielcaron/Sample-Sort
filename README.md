@@ -16,8 +16,8 @@ Still, decent speedup values were observed with large arrays and are included be
 ### Steps:
 - **Step 1:** The parent thread randomly picks a sample array 's' of size 'm' from the array 'a'.
 - **Step 2:** The parent thread divides the sample 's' into 'p' sub-arrays of equal size by choosing splitters / dividers.
-- **Step 3:** Launch 'p' threads each working on a sub-array of size 'n'/'p'. Each thread will divide its sub-array into p sub-groups based on the splitters / dividers. Once all threads have returned, the sub-groups of each thread are combined to form the final 'p' arrays to be sorted by 'p' threads.
-- **Step 4:** Launch 'p' threads each sorting an array. Once all threads have returned, the arrays are combined to form the final sorted array.
+- **Step 3:** 'p' threads are launched each working on a sub-array of size 'n'/'p'. Each thread will divide its sub-array into p sub-groups based on the splitters / dividers. Once all threads have returned, the sub-groups of each thread are combined to form the final 'p' arrays to be sorted by 'p' threads.
+- **Step 4:** 'p' threads are launched again, now each sorting an array. Once all threads have returned, the arrays are combined to form the final sorted array.
 
 ### Output:
 - The sorted array of elements
